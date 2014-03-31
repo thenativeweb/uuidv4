@@ -1,0 +1,24 @@
+{
+  "name": "uuid",
+  "version": "0.0.1",
+  "description": "uuid creates UUIDs.",
+  "author": "Golo Roden <golo.roden@thenativeweb.io> (http://www.thenativeweb.io)",
+  "main": "lib/uuid.js",
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-jshint": "0.7.1",
+    "grunt-contrib-watch": "0.5.3",
+    "grunt-mocha-test": "0.7.0",
+    "node-assertthat": "0.0.21"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenativeweb/uuid.git"
+  }
+}
