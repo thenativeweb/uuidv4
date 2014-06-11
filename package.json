@@ -8,11 +8,13 @@
   "dependencies": {
   },
   "devDependencies": {
-    "grunt": "0.4.1",
-    "grunt-contrib-jshint": "0.7.1",
-    "grunt-contrib-watch": "0.5.3",
-    "grunt-mocha-test": "0.7.0",
-    "node-assertthat": "0.0.21"
+    "grunt": "0.4.5",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-eslint": "0.5.0",
+    "grunt-jscs-checker": "0.4.4",
+    "grunt-mocha-test": "0.11.0",
+    "node-assertthat": "0.0.21",
+    "tourism": "git+ssh://git@github.com:thenativeweb/tourism.git"
   },
   "scripts": {
     "test": "mocha"
