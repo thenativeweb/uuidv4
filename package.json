@@ -1,12 +1,11 @@
 {
   "name": "uuid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "uuid creates UUIDs.",
   "author": "Golo Roden <golo.roden@thenativeweb.io> (http://www.thenativeweb.io)",
   "main": "lib/uuid.js",
   "private": true,
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "0.4.5",
     "node-assertthat": "0.0.21",
