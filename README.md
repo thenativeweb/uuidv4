@@ -21,6 +21,13 @@ console.log(uuid());
 // => 11bf5b37-e0b8-42e0-8dcf-dc8c4aefc000
 ```
 
+If you need a UUID that consists only of zeros, use the `empty` function.
+
+```javascript
+console.log(uuid.empty());
+// => 00000000-0000-0000-0000-000000000000
+```
+
 ## Running the build
 
 This module can be built using [Grunt](http://gruntjs.com/). Besides running the tests, this also analyses the code. To run Grunt, go to the folder where you have installed uuid and run `grunt`. You need to have [grunt-cli](https://github.com/gruntjs/grunt-cli) installed.

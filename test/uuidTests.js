@@ -20,4 +20,10 @@ suite('uuid', function () {
 
     assert.that(actualFirst, is.not.equalTo(actualSecond));
   });
+
+  suite('empty', function () {
+    test('returns the 0000... UUID.', function () {
+      assert.that(uuid.empty(), is.equalTo('00000000-0000-0000-0000-000000000000'));
+    });
+  });
 });
