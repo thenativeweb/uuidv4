@@ -8,7 +8,7 @@ uuid creates v4 UUIDs.
 
 ## Quick start
 
-The first thing you need to do is to integrate uuidv4 into your project by using the `require` function.
+First you need to integrate uuidv4 into your project by using the `require` function.
 
 ```javascript
 var uuid = require('uuidv4');
