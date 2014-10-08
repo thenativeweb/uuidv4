@@ -1,5 +1,5 @@
 {
-  "name": "uuid",
+  "name": "uuidv4",
   "version": "0.2.0",
   "description": "uuid creates UUIDs.",
   "contributors": [
@@ -12,17 +12,16 @@
       "email": "matthias.wagler@thenativeweb.io"
     }
   ],
-  "main": "lib/uuid.js",
-  "private": true,
+  "main": "lib/uuidv4.js",
   "dependencies": {},
   "devDependencies": {
     "grunt": "0.4.5",
-    "node-assertthat": "0.2.0",
-    "tourism": "0.1.0"
+    "node-assertthat": "0.2.1",
+    "tourism": "0.7.3"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thenativeweb/uuid.git"
+    "url": "git://github.com/thenativeweb/uuidv4.git"
   },
   "license": "MIT"
 }
