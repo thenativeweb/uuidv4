@@ -15,9 +15,9 @@
   "main": "lib/uuidv4.js",
   "dependencies": {},
   "devDependencies": {
+    "assertthat": "0.4.2",
     "grunt": "0.4.5",
-    "node-assertthat": "0.2.1",
-    "tourism": "0.7.3"
+    "tourism": "0.13.2"
   },
   "repository": {
     "type": "git",

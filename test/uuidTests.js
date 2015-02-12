@@ -1,6 +1,6 @@
 'use strict';
 
-var assert = require('node-assertthat');
+var assert = require('assertthat');
 
 var uuidv4 = require('../lib/uuidv4');
 
@@ -10,8 +10,8 @@ suite('uuidv4', function () {
 
     var actual = uuidv4();
 
-    assert.that(actual, is.ofType('string'));
-    assert.that(uuidRegex.test(actual), is.true());
+    assert.that(actual).is.ofType('string');
+    assert.that(uuidRegex.test(actual)).is.true();
     done();
   });
 
@@ -19,13 +19,13 @@ suite('uuidv4', function () {
     var actualFirst = uuidv4(),
         actualSecond = uuidv4();
 
-    assert.that(actualFirst, is.not.equalTo(actualSecond));
+    assert.that(actualFirst).is.not.equalTo(actualSecond);
     done();
   });
 
   suite('empty', function () {
     test('returns 00000000-0000-0000-0000-000000000000.', function (done) {
-      assert.that(uuidv4.empty(), is.equalTo('00000000-0000-0000-0000-000000000000'));
+      assert.that(uuidv4.empty()).is.equalTo('00000000-0000-0000-0000-000000000000');
       done();
     });
   });
