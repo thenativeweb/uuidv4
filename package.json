@@ -23,5 +23,9 @@
     "type": "git",
     "url": "git://github.com/thenativeweb/uuidv4.git"
   },
+  "keywords": [
+    "guid",
+    "uuid"
+  ],
   "license": "MIT"
 }

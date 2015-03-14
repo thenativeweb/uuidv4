@@ -1,0 +1,13 @@
+machine:
+  timezone: Europe/Berlin
+
+  node:
+    version: 0.12.0
+
+dependencies:
+  pre:
+    - npm install -g grunt-cli
+
+test:
+  override:
+    - grunt
