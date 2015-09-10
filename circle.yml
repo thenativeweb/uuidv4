@@ -2,7 +2,7 @@ machine:
   timezone: Europe/Berlin
 
   node:
-    version: iojs-3.0.0
+    version: 4.0.0
 
 dependencies:
   pre:
