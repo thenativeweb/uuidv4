@@ -4,14 +4,16 @@ uuid creates v4 UUIDs.
 
 ## Installation
 
-    $ npm install uuidv4
+```bash
+$ npm install uuidv4
+```
 
 ## Quick start
 
 First you need to integrate uuidv4 into your project by using the `require` function.
 
 ```javascript
-var uuid = require('uuidv4');
+const uuid = require('uuidv4');
 ```
 
 Then you can create UUIDs. To do so simply call the `uuid` function.
@@ -30,14 +32,16 @@ console.log(uuid.empty());
 
 ## Running the build
 
-This module can be built using [Grunt](http://gruntjs.com/). Besides running the tests, this also analyses the code. To run Grunt, go to the folder where you have installed uuidv4 and run `grunt`. You need to have [grunt-cli](https://github.com/gruntjs/grunt-cli) installed.
+To build this module use [roboter](https://www.npmjs.com/package/roboter).
 
-    $ grunt
+```bash
+$ bot
+```
 
 ## License
 
 The MIT License (MIT)
-Copyright (c) 2014 the native web.
+Copyright (c) 2014-2016 the native web.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

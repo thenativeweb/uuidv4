@@ -15,10 +15,22 @@
   "main": "lib/uuidv4.js",
   "dependencies": {},
   "devDependencies": {
-    "assertthat": "0.4.2",
-    "grunt": "0.4.5",
-    "tourism": "0.13.2"
+    "assertthat": "0.8.0",
+    "roboter": "0.13.5",
+    "roboter-server": "0.13.5"
   },
+  "browserify": {
+      "transform": [
+        [
+          "babelify",
+          {
+            "presets": [
+              "es2015"
+            ]
+          }
+        ]
+      ]
+    },
   "repository": {
     "type": "git",
     "url": "git://github.com/thenativeweb/uuidv4.git"
