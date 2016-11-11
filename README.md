@@ -20,14 +20,25 @@ Then you can create UUIDs. To do so simply call the `uuid` function.
 
 ```javascript
 console.log(uuid());
-// => 11bf5b37-e0b8-42e0-8dcf-dc8c4aefc000
+// => '11bf5b37-e0b8-42e0-8dcf-dc8c4aefc000'
 ```
+
+### Getting a UUID from a string
+
+From time to time you need an identifier that looks like a UUID, but is actually inferred from a string. For that, use the `fromString` function.
+
+```javascript
+console.log(uuid.fromString('the native web'));
+// => 'cc762e69-089e-4239-8b06-1ab26a005319'
+```
+
+### Getting the empty UUID
 
 If you need a UUID that consists only of zeros, use the `empty` function.
 
 ```javascript
 console.log(uuid.empty());
-// => 00000000-0000-0000-0000-000000000000
+// => '00000000-0000-0000-0000-000000000000'
 ```
 
 ## Running the build
