@@ -2,7 +2,7 @@ machine:
   timezone: Europe/Berlin
 
   node:
-    version: 6.9.1
+    version: 6.9.5
 
 dependencies:
   pre:

@@ -23,6 +23,21 @@ console.log(uuid());
 // => '11bf5b37-e0b8-42e0-8dcf-dc8c4aefc000'
 ```
 
+### Verifying a UUID
+
+To verify whether a given value is a UUID, use the `is` function.
+
+```javascript
+console.log(uuid.is('75442486-0878-440c-9db1-a7006c25a39f'));
+// => true
+```
+
+If you want to perform the verification on your own, use the `regex` property.
+
+```javascript
+console.log(uuid.regex);
+```
+
 ### Getting a UUID from a string
 
 From time to time you need an identifier that looks like a UUID, but is actually inferred from a string. For that, use the `fromString` function.
@@ -52,7 +67,7 @@ $ bot
 ## License
 
 The MIT License (MIT)
-Copyright (c) 2014-2016 the native web.
+Copyright (c) 2014-2017 the native web.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

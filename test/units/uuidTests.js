@@ -33,6 +33,25 @@ suite('uuidv4', () => {
     });
   });
 
+  suite('is', () => {
+    test('throws an error if value is missing.', done => {
+      assert.that(() => {
+        uuidv4.is();
+      }).is.throwing('Value is missing.');
+      done();
+    });
+
+    test('returns true if a v4 UUID is given.', done => {
+      assert.that(uuidv4.is('9afb733b-5001-4275-a099-03a1d2cca51e')).is.true();
+      done();
+    });
+
+    test('returns false if no v4 UUID is given.', done => {
+      assert.that(uuidv4.is('definitely-not-a-uuid')).is.false();
+      done();
+    });
+  });
+
   suite('fromString', () => {
     test('is a function.', done => {
       assert.that(uuidv4.fromString).is.ofType('function');
