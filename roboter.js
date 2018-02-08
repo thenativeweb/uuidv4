@@ -28,6 +28,7 @@ roboter.
         '(Apache-2.0 OR MPL-1.1)',
         'BSD-3-Clause OR MIT',
         '(MIT AND CC-BY-3.0)',
+        '(MIT OR Apache-2.0)',
         '(WTFPL OR MIT)'
       ],
 
@@ -35,14 +36,17 @@ roboter.
         // BSD-3-Clause, see https://github.com/deoxxa/duplexer2/blob/0.0.2/LICENSE.md
         duplexer2: '0.0.2',
 
+        // BSD-3-Clause, see https://github.com/estools/esquery/blob/v1.0.0/license.txt
+        esquery: '1.0.0',
+
         // MIT, see https://github.com/mklabs/node-fileset/blob/v0.2.1/LICENSE-MIT
         fileset: '0.2.1',
 
         // MIT, https://github.com/tarruda/has/blob/1.0.1/package.json
         has: '1.0.1',
 
-        // BSD-2-Clause, see https://github.com/facebook/regenerator/blob/e22c9317987ebcf4041e9188cb208b94f662df35/LICENSE
-        'regenerator-transform': '0.9.8',
+        // BSD-2-Clause, see https://github.com/facebook/regenerator/blob/30d34536b9e3f7a2873b04a16ec66fec9c8246f6/LICENSE
+        'regenerator-transform': '0.10.1',
 
         // BSD-2-Clause, see https://github.com/jviereck/regjsparser/blob/0.1.5/LICENSE.BSD
         regjsparser: '0.1.5',

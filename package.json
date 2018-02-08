@@ -10,6 +10,10 @@
     {
       "name": "Matthias Wagler",
       "email": "matthias.wagler@thenativeweb.io"
+    },
+    {
+      "name": "Jan-Hendrik Grundhöfer",
+      "email": "jan-hendrik.grundhoefer@thenativeweb.io"
     }
   ],
   "main": "dist/uuidv4.js",
@@ -17,9 +21,9 @@
     "sha-1": "0.1.1"
   },
   "devDependencies": {
-    "assertthat": "0.8.5",
-    "roboter": "0.15.1",
-    "roboter-server": "0.15.1"
+    "assertthat": "1.0.0",
+    "roboter": "0.15.6",
+    "roboter-server": "0.15.6"
   },
   "repository": {
     "type": "git",
