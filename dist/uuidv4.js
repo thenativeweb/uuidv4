@@ -1,17 +1,10 @@
 'use strict';
 
-var sha1 = require('sha-1');
+var sha1 = require('sha-1'),
+    uuid = require('uuid/v4');
 
-// See http://stackoverflow.com/a/2117523/1333873 for details.
 var uuidv4 = function uuidv4() {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (character) {
-    /* eslint-disable no-bitwise */
-    var randomNumber = Math.random() * 16 | 0,
-        result = character === 'x' ? randomNumber : randomNumber & 0x3 | 0x8;
-    /* eslint-enable no-bitwise */
-
-    return result.toString(16);
-  });
+  return uuid();
 };
 
 uuidv4.regex = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89aAbB][a-f0-9]{3}-[a-f0-9]{12}$/;
@@ -34,9 +27,9 @@ uuidv4.fromString = function (text) {
   }
 
   var hash = sha1(text),
-      uuid = hash.substring(0, 8) + '-' + hash.substring(8, 12) + '-4' + hash.substring(13, 16) + '-8' + hash.substring(17, 20) + '-' + hash.substring(20, 32);
+      uuidFromString = hash.substring(0, 8) + '-' + hash.substring(8, 12) + '-4' + hash.substring(13, 16) + '-8' + hash.substring(17, 20) + '-' + hash.substring(20, 32);
 
-  return uuid;
+  return uuidFromString;
 };
 
 module.exports = uuidv4;
