@@ -30,10 +30,8 @@ suite('uuidv4', () => {
   });
 
   suite('is', () => {
-    test('throws an error if value is missing.', async () => {
-      assert.that(() => {
-        uuidv4.is();
-      }).is.throwing('Value is missing.');
+    test('returns false if value is missing.', async () => {
+      assert.that(uuidv4.is()).is.false();
     });
 
     test('returns true if a v4 UUID is given.', async () => {

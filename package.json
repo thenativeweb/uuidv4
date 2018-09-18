@@ -14,16 +14,20 @@
     {
       "name": "Jan-Hendrik Grundhöfer",
       "email": "jan-hendrik.grundhoefer@thenativeweb.io"
+    },
+    {
+      "name": "Sven Eppler",
+      "email": "sven.eppler@sodgeit.de"
     }
   ],
   "main": "dist/uuidv4.js",
   "dependencies": {
     "sha-1": "0.1.1",
-    "uuid": "3.2.1"
+    "uuid": "3.3.2"
   },
   "devDependencies": {
     "assertthat": "1.0.0",
-    "roboter": "1.0.4"
+    "roboter": "1.0.7"
   },
   "repository": {
     "type": "git",
