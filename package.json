@@ -26,8 +26,8 @@
     "uuid": "3.3.2"
   },
   "devDependencies": {
-    "assertthat": "1.0.0",
-    "roboter": "1.0.7"
+    "assertthat": "2.0.1",
+    "roboter": "3.0.4"
   },
   "repository": {
     "type": "git",
