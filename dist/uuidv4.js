@@ -1,10 +1,10 @@
 'use strict';
 
-var sha1 = require('sha-1'),
-    uuid = require('uuid/v4');
+var v4 = require('uuid/v4'),
+    v5 = require('uuid/v5');
 
 var uuidv4 = function uuidv4() {
-  return uuid();
+  return v4();
 };
 
 uuidv4.regex = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89aAbB][a-f0-9]{3}-[a-f0-9]{12}$/;
@@ -26,9 +26,8 @@ uuidv4.fromString = function (text) {
     throw new Error('Text is missing.');
   }
 
-  var hash = sha1(text),
-      uuidFromString = hash.substring(0, 8) + '-' + hash.substring(8, 12) + '-4' + hash.substring(13, 16) + '-8' + hash.substring(17, 20) + '-' + hash.substring(20, 32);
-
+  var namespace = 'bb5d0ffa-9a4c-4d7c-8fc2-0a7d2220ba45';
+  var uuidFromString = v5(text, namespace);
   return uuidFromString;
 };
 
