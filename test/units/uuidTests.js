@@ -54,11 +54,11 @@ suite('uuidv4', () => {
       }).is.throwing('Text is missing.');
     });
 
-    test('returns a v4 UUID that is derived from the SHA1 of the given text.', async () => {
+    test('returns a v5 UUID that is derived from the given text.', async () => {
       const uuid = uuidv4.fromString('the native web');
 
-      assert.that(uuid).is.equalTo('cc762e69-089e-4239-8b06-1ab26a005319');
-      assert.that(uuidv4.regex.test(uuid)).is.true();
+      assert.that(uuid).is.equalTo('cdb63720-9628-5ef6-bbca-2e5ce6094f3c');
+      assert.that(uuidv4.regex.test(uuid)).is.false();
     });
   });
 

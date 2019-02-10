@@ -22,12 +22,11 @@
   ],
   "main": "dist/uuidv4.js",
   "dependencies": {
-    "sha-1": "0.1.1",
     "uuid": "3.3.2"
   },
   "devDependencies": {
     "assertthat": "2.0.1",
-    "roboter": "3.0.4"
+    "roboter": "4.0.0"
   },
   "repository": {
     "type": "git",
