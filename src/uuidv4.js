@@ -7,14 +7,17 @@ const uuidv4 = function () {
   return v4();
 };
 
-uuidv4.regex = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89aAbB][a-f0-9]{3}-[a-f0-9]{12}$/;
+uuidv4.regex = {
+  v4: /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[a-f0-9]{4}-[a-f0-9]{12}$/,
+  v5: /^[a-f0-9]{8}-[a-f0-9]{4}-5[a-f0-9]{3}-[a-f0-9]{4}-[a-f0-9]{12}$/
+};
 
 uuidv4.is = function (value) {
   if (!value) {
     return false;
   }
 
-  return uuidv4.regex.test(value);
+  return uuidv4.regex.v4.test(value) || uuidv4.regex.v5.test(value);
 };
 
 uuidv4.empty = function () {

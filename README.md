@@ -10,13 +10,13 @@ $ npm install uuidv4
 
 ## Quick start
 
-First you need to integrate uuidv4 into your project by using the `require` function.
+First you need to integrate uuidv4 into your project by using the `require` function:
 
 ```javascript
 const uuid = require('uuidv4');
 ```
 
-Then you can create UUIDs. To do so simply call the `uuid` function.
+Then you can create UUIDs. To do so simply call the `uuid` function:
 
 ```javascript
 console.log(uuid());
@@ -25,31 +25,34 @@ console.log(uuid());
 
 ### Verifying a UUID
 
-To verify whether a given value is a UUID, use the `is` function.
+To verify whether a given value is a UUID, use the `is` function:
 
 ```javascript
 console.log(uuid.is('75442486-0878-440c-9db1-a7006c25a39f'));
 // => true
 ```
 
-If you want to perform the verification on your own, use the `regex` property.
+*Please note that the `is` function returns `true` for both, `v4` and `v5` UUIDs.*
+
+If you want to perform the verification on your own, use the `regex` property, and access its `v4` or `v5` property, depending on what you need:
 
 ```javascript
-console.log(uuid.regex);
+console.log(uuid.regex.v4);
+console.log(uuid.regex.v5);
 ```
 
 ### Getting a UUID from a string
 
-From time to time you need an identifier that looks like a UUID, but is actually inferred from a string. For that, use the `fromString` function.
+From time to time you need an identifier that looks like a UUID, but is actually inferred from a string. For that, use the `fromString` function, which returns a UUID `v5`:
 
 ```javascript
 console.log(uuid.fromString('the native web'));
-// => 'cc762e69-089e-4239-8b06-1ab26a005319'
+// => 'cdb63720-9628-5ef6-bbca-2e5ce6094f3c'
 ```
 
 ### Getting the empty UUID
 
-If you need a UUID that consists only of zeros, use the `empty` function.
+If you need a UUID that consists only of zeros, use the `empty` function:
 
 ```javascript
 console.log(uuid.empty());
