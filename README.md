@@ -32,7 +32,7 @@ console.log(uuid.is('75442486-0878-440c-9db1-a7006c25a39f'));
 // => true
 ```
 
-*Please note that the `is` function returns `true` for both, `v4` and `v5` UUIDs.*
+_Please note that the `is` function returns `true` for both, `v4` and `v5` UUIDs._
 
 If you want to perform the verification on your own, use the `regex` property, and access its `v4` or `v5` property, depending on what you need:
 
