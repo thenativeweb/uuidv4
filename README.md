@@ -32,7 +32,7 @@ console.log(uuid.is('75442486-0878-440c-9db1-a7006c25a39f'));
 // => true
 ```
 
-_Please note that the `is` function returns `true` for both, `v4` and `v5` UUIDs._
+*Please note that the `is` function returns `true` for both, `v4` and `v5` UUIDs. In addition, `is` returns `true` for `uuid.empty()`.*
 
 If you want to perform the verification on your own, use the `regex` property, and access its `v4` or `v5` property, depending on what you need:
 
@@ -40,6 +40,8 @@ If you want to perform the verification on your own, use the `regex` property, a
 console.log(uuid.regex.v4);
 console.log(uuid.regex.v5);
 ```
+
+*Please note that the regular expressions also consider `uuid.empty()` to be a valid UUID.*
 
 ### Getting a UUID from a string
 

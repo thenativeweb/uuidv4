@@ -20,13 +20,13 @@
       "email": "sven.eppler@sodgeit.de"
     }
   ],
-  "main": "dist/uuidv4.js",
+  "main": "lib/uuidv4.js",
   "dependencies": {
     "uuid": "3.3.2"
   },
   "devDependencies": {
-    "assertthat": "2.0.1",
-    "roboter": "4.0.0"
+    "assertthat": "2.0.3",
+    "roboter": "4.0.3"
   },
   "repository": {
     "type": "git",
