@@ -13,7 +13,13 @@ $ npm install uuidv4
 First you need to integrate uuidv4 into your project by using the `require` function:
 
 ```javascript
-const uuid = require('uuidv4');
+const uuid = require('uuidv4').default;
+```
+
+If you use TypeScript, use the following code instead:
+
+```typescript
+import uuid from 'uuidv4';
 ```
 
 Then you can create UUIDs. To do so simply call the `uuid` function:
