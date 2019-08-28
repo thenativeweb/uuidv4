@@ -18,15 +18,21 @@
     {
       "name": "Sven Eppler",
       "email": "sven.eppler@sodgeit.de"
+    },
+    {
+      "name": "Hannes Leutloff",
+      "email": "hannes.leutloff@thenativeweb.io"
     }
   ],
-  "main": "lib/uuidv4.js",
+  "main": "build/lib/uuidv4.js",
+  "types": "build/lib/uuidv4.d.ts",
   "dependencies": {
-    "uuid": "3.3.2"
+    "uuid": "3.3.3"
   },
   "devDependencies": {
-    "assertthat": "2.0.3",
-    "roboter": "4.0.3"
+    "@types/uuid": "3.4.5",
+    "assertthat": "4.0.1",
+    "roboter": "7.1.1"
   },
   "repository": {
     "type": "git",
