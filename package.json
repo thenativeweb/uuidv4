@@ -24,7 +24,8 @@
       "email": "hannes.leutloff@thenativeweb.io"
     }
   ],
-  "main": "lib/uuidv4.js",
+  "main": "build/lib/uuidv4.js",
+  "types": "build/lib/uuidv4.d.ts",
   "dependencies": {
     "uuid": "3.3.3"
   },
