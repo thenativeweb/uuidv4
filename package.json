@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@types/uuid": "3.4.5",
-    "assertthat": "4.0.1",
+    "assertthat": "4.0.2",
     "roboter": "7.1.5"
   },
   "repository": {
