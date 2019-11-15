@@ -23,13 +23,13 @@ $ npm install uuidv4
 First you need to integrate uuidv4 into your project by using the `require` function:
 
 ```javascript
-const uuid = require('uuidv4').default;
+const { uuid } = require('uuidv4');
 ```
 
 If you use TypeScript, use the following code instead:
 
 ```typescript
-import uuid from 'uuidv4';
+import { uuid } from 'uuidv4';
 ```
 
 Then you can create UUIDs. To do so simply call the `uuid` function:
@@ -41,30 +41,36 @@ console.log(uuid());
 
 ### Verifying a UUID
 
-To verify whether a given value is a UUID, use the `is` function:
+To verify whether a given value is a UUID, use the `isUuid` function:
 
 ```javascript
-console.log(uuid.is('75442486-0878-440c-9db1-a7006c25a39f'));
+import { isUuid } from 'uuidv4';
+
+console.log(isUuid('75442486-0878-440c-9db1-a7006c25a39f'));
 // => true
 ```
 
-_Please note that the `is` function returns `true` for both, `v4` and `v5` UUIDs. In addition, `is` returns `true` for `uuid.empty()`._
+_Please note that the `isUuid` function returns `true` for both, `v4` and `v5` UUIDs. In addition, `isUuid` returns `true` for `empty()`._
 
 If you want to perform the verification on your own, use the `regex` property, and access its `v4` or `v5` property, depending on what you need:
 
 ```javascript
-console.log(uuid.regex.v4);
-console.log(uuid.regex.v5);
+import { regex } from 'uuidv4';
+
+console.log(regex.v4);
+console.log(regex.v5);
 ```
 
-_Please note that the regular expressions also consider `uuid.empty()` to be a valid UUID._
+_Please note that the regular expressions also consider `empty()` to be a valid UUID._
 
 ### Getting a UUID from a string
 
 From time to time you need an identifier that looks like a UUID, but is actually inferred from a string. For that, use the `fromString` function, which returns a UUID `v5`:
 
 ```javascript
-console.log(uuid.fromString('the native web'));
+import { fromString } from 'uuidv4';
+
+console.log(fromString('the native web'));
 // => 'cdb63720-9628-5ef6-bbca-2e5ce6094f3c'
 ```
 
@@ -73,7 +79,9 @@ console.log(uuid.fromString('the native web'));
 If you need a UUID that consists only of zeros, use the `empty` function:
 
 ```javascript
-console.log(uuid.empty());
+import { empty } from 'uuidv4';
+
+console.log(empty());
 // => '00000000-0000-0000-0000-000000000000'
 ```
 
