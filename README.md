@@ -4,13 +4,13 @@ uuid creates v4 UUIDs.
 
 ## Status
 
-| Category         | Status                                                                                                                                   |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Version          | [![npm](https://img.shields.io/npm/v/uuidv4)](https://www.npmjs.com/package/uuidv4)                                                      |
-| Dependencies     | ![David](https://img.shields.io/david/thenativeweb/uuidv4)                                                                               |
-| Dev dependencies | ![David](https://img.shields.io/david/dev/thenativeweb/uuidv4)                                                                           |
-| Build            | [![CircleCI](https://img.shields.io/circleci/build/github/thenativeweb/uuidv4)](https://circleci.com/gh/thenativeweb/uuidv4/tree/master) |
-| License          | ![GitHub](https://img.shields.io/github/license/thenativeweb/uuidv4)                                                                     |
+| Category         | Status                                                                                              |
+| ---------------- | --------------------------------------------------------------------------------------------------- |
+| Version          | [![npm](https://img.shields.io/npm/v/uuidv4)](https://www.npmjs.com/package/uuidv4)                 |
+| Dependencies     | ![David](https://img.shields.io/david/thenativeweb/uuidv4)                                          |
+| Dev dependencies | ![David](https://img.shields.io/david/dev/thenativeweb/uuidv4)                                      |
+| Build            | ![GitHub Actions](https://github.com/thenativeweb/uuidv4/workflows/Release/badge.svg?branch=master) |
+| License          | ![GitHub](https://img.shields.io/github/license/thenativeweb/uuidv4)                                |
 
 ## Installation
 

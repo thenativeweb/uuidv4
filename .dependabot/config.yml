@@ -11,6 +11,9 @@ update_configs:
     - "yeldiRium"
     default_labels:
     - "Dependencies"
+    commit_message:
+      prefix: "fix"
+      prefix_development: "chore"
     allowed_updates:
     - match:
         dependency_type: "direct"
