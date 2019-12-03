@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: Install dependencies
+      run: |
+        npm install
+    - name: Run roboter
+      run: |
+        npx roboter
+    - name: Compile TypeScript
+      run: |
+        npx roboter build
+    - name: Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_ADMIN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN_ADMIN }}
+      run: npx semantic-release
