@@ -32,7 +32,7 @@
   "devDependencies": {
     "@types/uuid": "3.4.6",
     "assertthat": "5.1.0",
-    "roboter": "10.0.4",
+    "roboter": "10.0.5",
     "semantic-release-configuration": "1.0.6"
   },
   "repository": {
