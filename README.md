@@ -1,6 +1,6 @@
-# uuid
+# uuidv4
 
-uuid creates v4 UUIDs.
+uuidv4 creates v4 UUIDs.
 
 ## Status
 
