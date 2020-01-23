@@ -17,15 +17,39 @@ suite('uuid', (): void => {
   });
 
   suite('regex', (): void => {
+    let uuidv4: string,
+        uuidv5: string;
+
+    setup(async (): Promise<void> => {
+      uuidv4 = uuid();
+      uuidv5 = fromString('the native web');
+    });
+
     suite('v4', (): void => {
-      test('is a regular expression that describes a UUID v4.', async (): Promise<void> => {
-        assert.that(regex.v4).is.equalTo(/^(?:[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[a-f0-9]{4}-[a-f0-9]{12})|(?:0{8}-0{4}-0{4}-0{4}-0{12})$/u);
+      test('is a regular expression that matches a UUID v4.', async (): Promise<void> => {
+        assert.that(uuidv4).is.matching(regex.v4);
+      });
+
+      test('is a regular expression that correctly matches the start of a UUID v4.', async (): Promise<void> => {
+        assert.that(`31${uuidv4}`).is.not.matching(regex.v4);
+      });
+
+      test('is a regular expression that correctly matches the end of a UUID v4.', async (): Promise<void> => {
+        assert.that(`${uuidv4}31`).is.not.matching(regex.v4);
       });
     });
 
     suite('v5', (): void => {
-      test('is a regular expression that describes a UUID v5.', async (): Promise<void> => {
-        assert.that(regex.v5).is.equalTo(/^(?:[a-f0-9]{8}-[a-f0-9]{4}-5[a-f0-9]{3}-[a-f0-9]{4}-[a-f0-9]{12})|(?:0{8}-0{4}-0{4}-0{4}-0{12})$/u);
+      test('is a regular expression that matches a UUID v5.', async (): Promise<void> => {
+        assert.that(uuidv5).is.matching(regex.v5);
+      });
+
+      test('is a regular expression that correctly matches the start of a UUID v5.', async (): Promise<void> => {
+        assert.that(`31${uuidv5}`).is.not.matching(regex.v5);
+      });
+
+      test('is a regular expression that correctly matches the end of a UUID v5.', async (): Promise<void> => {
+        assert.that(`${uuidv5}31`).is.not.matching(regex.v5);
       });
     });
   });
