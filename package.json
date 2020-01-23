@@ -1,7 +1,7 @@
 {
   "name": "uuidv4",
   "version": "6.0.2",
-  "description": "uuid creates UUIDs.",
+  "description": "uuidv4 creates v4 UUIDs.",
   "contributors": [
     {
       "name": "Golo Roden",
