@@ -1,5 +1,4 @@
-import v4 from 'uuid/v4';
-import v5 from 'uuid/v5';
+import { v4, v5 } from 'uuid';
 
 const uuidv4 = function (): string {
   return v4();
