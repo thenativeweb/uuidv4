@@ -1,3 +1,10 @@
+## [6.0.4](https://github.com/thenativeweb/uuidv4/compare/6.0.3...6.0.4) (2020-02-25)
+
+
+### Bug Fixes
+
+* Update dependencies. ([#122](https://github.com/thenativeweb/uuidv4/issues/122)) ([8dfd604](https://github.com/thenativeweb/uuidv4/commit/8dfd604a0ea9472295664bfa8d651d7cd1a85806))
+
 ## [6.0.3](https://github.com/thenativeweb/uuidv4/compare/6.0.2...6.0.3) (2020-02-24)
 
 
