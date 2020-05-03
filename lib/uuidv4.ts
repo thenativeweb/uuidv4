@@ -27,6 +27,7 @@ const fromString = function (text: string): string {
 
 export {
   uuidv4 as uuid,
+  uuidv4,
   regex,
   isUuid,
   empty,
