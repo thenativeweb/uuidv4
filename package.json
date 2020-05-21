@@ -30,7 +30,7 @@
     "uuid": "8.1.0"
   },
   "devDependencies": {
-    "@types/uuid": "7.0.3",
+    "@types/uuid": "8.0.0",
     "assertthat": "5.1.1",
     "roboter": "11.1.24",
     "semantic-release-configuration": "1.0.19"
