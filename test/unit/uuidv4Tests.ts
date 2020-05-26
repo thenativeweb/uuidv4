@@ -1,5 +1,5 @@
 import { assert } from 'assertthat';
-import { empty, fromString, isUuid, regex, uuid } from '../../lib/uuidv4';
+import { empty, fromString, isUuid, jsonSchema, regex, uuid } from '../../lib/uuidv4';
 
 suite('uuid', (): void => {
   test('returns a v4 UUID.', async (): Promise<void> => {
@@ -84,6 +84,18 @@ suite('uuid', (): void => {
   suite('empty', (): void => {
     test('returns 00000000-0000-0000-0000-000000000000.', async (): Promise<void> => {
       assert.that(empty()).is.equalTo('00000000-0000-0000-0000-000000000000');
+    });
+  });
+
+  suite('jsonSchema', (): void => {
+    test('v4 is based on the v4 regex.', async (): Promise<void> => {
+      // eslint-disable-next-line @typescript-eslint/no-base-to-string
+      assert.that(jsonSchema.v4).is.equalTo({ type: 'string', pattern: regex.v4.toString().slice(1, -1) });
+    });
+
+    test('v5 is based on the v5 regex.', async (): Promise<void> => {
+      // eslint-disable-next-line @typescript-eslint/no-base-to-string
+      assert.that(jsonSchema.v5).is.equalTo({ type: 'string', pattern: regex.v5.toString().slice(1, -1) });
     });
   });
 });
