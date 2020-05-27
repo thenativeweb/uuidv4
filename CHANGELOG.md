@@ -1,3 +1,10 @@
+# [6.1.0](https://github.com/thenativeweb/uuidv4/compare/6.0.9...6.1.0) (2020-05-27)
+
+
+### Features
+
+* Allow UUID verification using JSON schemas. ([#167](https://github.com/thenativeweb/uuidv4/issues/167)) ([8af8a27](https://github.com/thenativeweb/uuidv4/commit/8af8a27a01a9a301484bcddf402d87840a19cbbb))
+
 ## [6.0.9](https://github.com/thenativeweb/uuidv4/compare/6.0.8...6.0.9) (2020-05-21)
 
 
