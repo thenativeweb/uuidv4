@@ -52,7 +52,9 @@ console.log(isUuid('75442486-0878-440c-9db1-a7006c25a39f'));
 
 _Please note that the `isUuid` function returns `true` for both, `v4` and `v5` UUIDs. In addition, `isUuid` returns `true` for `empty()`._
 
-If you want to perform the verification on your own, use the `regex` property, and access its `v4` or `v5` property, depending on what you need:
+#### Using a regular expression
+
+If you want to perform the verification on your own using a regular expression, use the `regex` property, and access its `v4` or `v5` property, depending on what you need:
 
 ```javascript
 import { regex } from 'uuidv4';
@@ -62,6 +64,19 @@ console.log(regex.v5);
 ```
 
 _Please note that the regular expressions also consider `empty()` to be a valid UUID._
+
+#### Using a JSON schema
+
+If you want to perform the verification on your own using a JSON schema, use the `jsonSchema` property, and access its `v4` or `v5` property, depending on what you need:
+
+```javascript
+import { jsonSchema } from 'uuidv4';
+
+console.log(jsonSchema.v4);
+console.log(jsonSchema.v5);
+```
+
+_Please note that the JSON schemas also consider `empty()` to be a valid UUID._
 
 ### Getting a UUID from a string
 

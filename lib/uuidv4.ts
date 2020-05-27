@@ -9,6 +9,13 @@ const regex = {
   v5: /(?:^[a-f0-9]{8}-[a-f0-9]{4}-5[a-f0-9]{3}-[a-f0-9]{4}-[a-f0-9]{12}$)|(?:^0{8}-0{4}-0{4}-0{4}-0{12}$)/u
 };
 
+const jsonSchema = {
+  /* eslint-disable @typescript-eslint/no-base-to-string */
+  v4: { type: 'string', pattern: regex.v4.toString().slice(1, -1) },
+  v5: { type: 'string', pattern: regex.v5.toString().slice(1, -1) }
+  /* eslint-enable @typescript-eslint/no-base-to-string */
+};
+
 const isUuid = function (value: string): boolean {
   return regex.v4.test(value) || regex.v5.test(value);
 };
@@ -30,5 +37,6 @@ export {
   regex,
   isUuid,
   empty,
-  fromString
+  fromString,
+  jsonSchema
 };
