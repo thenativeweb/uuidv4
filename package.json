@@ -27,12 +27,12 @@
   "main": "build/lib/uuidv4.js",
   "types": "build/lib/uuidv4.d.ts",
   "dependencies": {
+    "@types/uuid": "8.0.0",
     "uuid": "8.1.0"
   },
   "devDependencies": {
-    "@types/uuid": "8.0.0",
     "assertthat": "5.1.1",
-    "roboter": "11.1.26",
+    "roboter": "11.2.0",
     "semantic-release-configuration": "1.0.20"
   },
   "repository": {
