@@ -1,3 +1,10 @@
+# [6.2.0](https://github.com/thenativeweb/uuidv4/compare/6.1.1...6.2.0) (2020-07-16)
+
+
+### Features
+
+* Make namespace for UUIDv5 configurable. ([3bb6fe1](https://github.com/thenativeweb/uuidv4/commit/3bb6fe10308804f904687582a5c61f778b675ae4))
+
 ## [6.1.1](https://github.com/thenativeweb/uuidv4/compare/6.1.0...6.1.1) (2020-06-24)
 
 
