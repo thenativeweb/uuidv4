@@ -11,8 +11,8 @@ const regex = {
 
 const jsonSchema = {
   /* eslint-disable @typescript-eslint/no-base-to-string */
-  v4: { type: 'string', pattern: regex.v4.toString().slice(1, -1) },
-  v5: { type: 'string', pattern: regex.v5.toString().slice(1, -1) }
+  v4: { type: 'string', pattern: regex.v4.toString().slice(1, -2) },
+  v5: { type: 'string', pattern: regex.v5.toString().slice(1, -2) }
   /* eslint-enable @typescript-eslint/no-base-to-string */
 };
 
@@ -24,9 +24,10 @@ const empty = function (): string {
   return '00000000-0000-0000-0000-000000000000';
 };
 
-const fromString = function (text: string): string {
-  const namespace = 'bb5d0ffa-9a4c-4d7c-8fc2-0a7d2220ba45';
-
+const fromString = function (
+  text: string,
+  namespace = 'bb5d0ffa-9a4c-4d7c-8fc2-0a7d2220ba45'
+): string {
   const uuidFromString = v5(text, namespace);
 
   return uuidFromString;

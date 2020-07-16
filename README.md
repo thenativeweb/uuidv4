@@ -89,6 +89,15 @@ console.log(fromString('the native web'));
 // => 'cdb63720-9628-5ef6-bbca-2e5ce6094f3c'
 ```
 
+By default, the `fromString` function uses a pre-configured namespace. If you want to use your own namespace, provide a UUID as second parameter:
+
+```javascript
+import { fromString } from 'uuidv4';
+
+console.log(fromString('the native web', '004aadf4-8e1a-4450-905b-6039179f52da'));
+// => 'b1c4a89e-4905-5e3c-b57f-dc92627d011e'
+```
+
 ### Getting the empty UUID
 
 If you need a UUID that consists only of zeros, use the `empty` function:

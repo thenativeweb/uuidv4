@@ -90,12 +90,12 @@ suite('uuid', (): void => {
   suite('jsonSchema', (): void => {
     test('v4 is based on the v4 regex.', async (): Promise<void> => {
       // eslint-disable-next-line @typescript-eslint/no-base-to-string
-      assert.that(jsonSchema.v4).is.equalTo({ type: 'string', pattern: regex.v4.toString().slice(1, -1) });
+      assert.that(jsonSchema.v4).is.equalTo({ type: 'string', pattern: regex.v4.toString().slice(1, -2) });
     });
 
     test('v5 is based on the v5 regex.', async (): Promise<void> => {
       // eslint-disable-next-line @typescript-eslint/no-base-to-string
-      assert.that(jsonSchema.v5).is.equalTo({ type: 'string', pattern: regex.v5.toString().slice(1, -1) });
+      assert.that(jsonSchema.v5).is.equalTo({ type: 'string', pattern: regex.v5.toString().slice(1, -2) });
     });
   });
 });
