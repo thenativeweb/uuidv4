@@ -1,8 +1,10 @@
-import { v4, v5 } from 'uuid';
+declare module 'uuid' {
+  export const NIL: string;
+  export function validate(value: any): boolean;
+}
 
-const uuidv4 = function (): string {
-  return v4();
-};
+import { deprecate } from 'util';
+import { NIL as nil, v4, v5, validate } from 'uuid';
 
 const regex = {
   v4: /(?:^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[a-f0-9]{4}-[a-f0-9]{12}$)|(?:^0{8}-0{4}-0{4}-0{4}-0{12}$)/u,
@@ -16,22 +18,25 @@ const jsonSchema = {
   /* eslint-enable @typescript-eslint/no-base-to-string */
 };
 
-const isUuid = function (value: string): boolean {
-  return regex.v4.test(value) || regex.v5.test(value);
-};
+const uuidv4 = deprecate(
+  (): string => v4(),
+  'uuidv4() is deprecated. Use v4() from the uuid module instead.'
+);
 
-const empty = function (): string {
-  return '00000000-0000-0000-0000-000000000000';
-};
+const isUuid = deprecate(
+  (value: string): boolean => validate(value),
+  'isUuid() is deprecated. Use validate() from the uuid module instead.'
+);
 
-const fromString = function (
-  text: string,
-  namespace = 'bb5d0ffa-9a4c-4d7c-8fc2-0a7d2220ba45'
-): string {
-  const uuidFromString = v5(text, namespace);
+const empty = deprecate(
+  (): string => nil,
+  'empty() is deprecated. Use NIL from the uuid module instead.'
+);
 
-  return uuidFromString;
-};
+const fromString = deprecate(
+  (text: string, namespace = 'bb5d0ffa-9a4c-4d7c-8fc2-0a7d2220ba45'): string => v5(text, namespace),
+  'fromString() is deprecated. Use v5() from the uuid module instead.'
+);
 
 export {
   uuidv4 as uuid,

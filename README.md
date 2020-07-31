@@ -12,6 +12,10 @@ uuidv4 creates v4 UUIDs.
 | Build            | ![GitHub Actions](https://github.com/thenativeweb/uuidv4/workflows/Release/badge.svg?branch=master) |
 | License          | ![GitHub](https://img.shields.io/github/license/thenativeweb/uuidv4)                                |
 
+## Please note
+
+This module will be deprecated in the future in favour of module [uuid](https://www.npmjs.com/package/uuid). Most of the functionality of this module is already included in `uuid` since version `8.3.0`, so most of the functions of this module have already been marked as deprecated.
+
 ## Installation
 
 ```shell
