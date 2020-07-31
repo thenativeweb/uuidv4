@@ -1,3 +1,10 @@
+## [6.2.1](https://github.com/thenativeweb/uuidv4/compare/6.2.0...6.2.1) (2020-07-31)
+
+
+### Bug Fixes
+
+* bump uuid from 8.2.0 to 8.3.0 ([#186](https://github.com/thenativeweb/uuidv4/issues/186)) ([3666eea](https://github.com/thenativeweb/uuidv4/commit/3666eea7298b5df89bdef936900895adb6bd2e4f))
+
 # [6.2.0](https://github.com/thenativeweb/uuidv4/compare/6.1.1...6.2.0) (2020-07-16)
 
 
