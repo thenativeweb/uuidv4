@@ -1,6 +1,5 @@
 declare module 'uuid' {
   export const NIL: string;
-  export function validate(value: any): boolean;
 }
 
 import { deprecate } from 'util';
