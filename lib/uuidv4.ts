@@ -1,7 +1,3 @@
-declare module 'uuid' {
-  export const NIL: string;
-}
-
 import { deprecate } from 'util';
 import { NIL as nil, v4, v5, validate } from 'uuid';
 

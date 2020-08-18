@@ -27,7 +27,7 @@
   "main": "build/lib/uuidv4.js",
   "types": "build/lib/uuidv4.d.ts",
   "dependencies": {
-    "@types/uuid": "8.0.1",
+    "@types/uuid": "8.3.0",
     "uuid": "8.3.0"
   },
   "devDependencies": {
