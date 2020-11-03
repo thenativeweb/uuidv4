@@ -1,3 +1,10 @@
+## [6.2.5](https://github.com/thenativeweb/uuidv4/compare/6.2.4...6.2.5) (2020-11-03)
+
+
+### Bug Fixes
+
+* Fix headline for robot section in readme. ([#233](https://github.com/thenativeweb/uuidv4/issues/233)) ([0b0b31c](https://github.com/thenativeweb/uuidv4/commit/0b0b31ccb957faf1f2966c89b712bc9bd91ebfd5))
+
 ## [6.2.4](https://github.com/thenativeweb/uuidv4/compare/6.2.3...6.2.4) (2020-10-05)
 
 
