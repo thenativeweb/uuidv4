@@ -33,7 +33,7 @@
   "devDependencies": {
     "assertthat": "5.2.5",
     "roboter": "11.5.11",
-    "semantic-release-configuration": "1.0.26"
+    "semantic-release-configuration": "1.0.27"
   },
   "repository": {
     "type": "git",
