@@ -63,8 +63,8 @@ suite('uuid', (): void => {
       assert.that(isUuid('cdb63720-9628-5ef6-bbca-2e5ce6094f3c')).is.true();
     });
 
-    test('returns true if an empty UUID is given.', async (): Promise<void> => {
-      assert.that(isUuid('00000000-0000-0000-0000-000000000000')).is.true();
+    test('returns false if an empty UUID is given.', async (): Promise<void> => {
+      assert.that(isUuid('00000000-0000-0000-0000-000000000000')).is.false();
     });
 
     test('returns false if no UUID v4 or v5 is given.', async (): Promise<void> => {
