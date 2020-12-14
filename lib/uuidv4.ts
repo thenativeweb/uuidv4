@@ -19,7 +19,7 @@ const uuidv4 = deprecate(
 );
 
 const isUuid = deprecate(
-  (value: string): boolean => {return validate(value) && (version(value) === 4 || version(value) === 5)},
+  (value: string): boolean => validate(value) && (version(value) === 4 || version(value) === 5),
   'isUuid() is deprecated. Use validate() from the uuid module instead.'
 );
 
