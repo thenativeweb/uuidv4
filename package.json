@@ -31,7 +31,7 @@
     "uuid": "8.3.2"
   },
   "devDependencies": {
-    "assertthat": "5.2.7",
+    "assertthat": "5.2.8",
     "roboter": "11.6.32",
     "semantic-release-configuration": "2.0.0"
   },
