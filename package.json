@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "assertthat": "5.2.8",
-    "roboter": "11.6.35",
+    "roboter": "11.6.37",
     "semantic-release-configuration": "2.0.0"
   },
   "repository": {
