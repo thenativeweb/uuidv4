@@ -1,6 +1,6 @@
 {
   "name": "uuidv4",
-  "version": "6.2.6",
+  "version": "6.2.7",
   "description": "uuidv4 creates v4 UUIDs.",
   "contributors": [
     {
@@ -31,9 +31,9 @@
     "uuid": "8.3.2"
   },
   "devDependencies": {
-    "assertthat": "5.2.5",
-    "roboter": "11.5.26",
-    "semantic-release-configuration": "1.0.28"
+    "assertthat": "5.2.8",
+    "roboter": "11.6.37",
+    "semantic-release-configuration": "2.0.0"
   },
   "repository": {
     "type": "git",

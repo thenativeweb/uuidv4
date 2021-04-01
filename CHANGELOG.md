@@ -1,3 +1,10 @@
+## [6.2.7](https://github.com/thenativeweb/uuidv4/compare/6.2.6...6.2.7) (2021-03-25)
+
+
+### Bug Fixes
+
+* Migrate from master to main. ([#321](https://github.com/thenativeweb/uuidv4/issues/321)) ([fa5d1ed](https://github.com/thenativeweb/uuidv4/commit/fa5d1ed9626f3d91219e383a676676c510b46965))
+
 ## [6.2.6](https://github.com/thenativeweb/uuidv4/compare/6.2.5...6.2.6) (2020-12-09)
 
 
