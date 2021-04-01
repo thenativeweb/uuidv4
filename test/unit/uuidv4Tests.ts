@@ -63,12 +63,20 @@ suite('uuid', (): void => {
       assert.that(isUuid('cdb63720-9628-5ef6-bbca-2e5ce6094f3c')).is.true();
     });
 
-    test('returns true if an empty UUID is given.', async (): Promise<void> => {
-      assert.that(isUuid('00000000-0000-0000-0000-000000000000')).is.true();
+    test('returns false if an empty UUID is given.', async (): Promise<void> => {
+      assert.that(isUuid('00000000-0000-0000-0000-000000000000')).is.false();
     });
 
     test('returns false if no UUID v4 or v5 is given.', async (): Promise<void> => {
       assert.that(isUuid('definitely-not-a-uuid')).is.false();
+    });
+
+    test('returns false if a UUID v1 is given.', async (): Promise<void> => {
+      assert.that(isUuid('d9428888-122b-11e1-b85c-61cd3cbb3210')).is.false();
+    });
+
+    test('returns false if a UUID v3 is given.', async (): Promise<void> => {
+      assert.that(isUuid('a981a0c2-68b1-35dc-bcfc-296e52ab01ec')).is.false();
     });
   });
 

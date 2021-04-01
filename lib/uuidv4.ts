@@ -1,5 +1,5 @@
 import { deprecate } from 'util';
-import { NIL as nil, v4, v5, validate } from 'uuid';
+import { NIL as nil, v4, v5, validate, version } from 'uuid';
 
 const regex = {
   v4: /(?:^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[a-f0-9]{4}-[a-f0-9]{12}$)|(?:^0{8}-0{4}-0{4}-0{4}-0{12}$)/u,
@@ -19,7 +19,7 @@ const uuidv4 = deprecate(
 );
 
 const isUuid = deprecate(
-  (value: string): boolean => validate(value),
+  (value: string): boolean => validate(value) && (version(value) === 4 || version(value) === 5),
   'isUuid() is deprecated. Use validate() from the uuid module instead.'
 );
 
