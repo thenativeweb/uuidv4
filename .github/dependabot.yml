@@ -1,0 +1,35 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - goloroden
+  - yeldiRium
+  labels:
+  - Dependencies
+  versioning-strategy: increase
+  allow:
+  - dependency-type: direct
+  ignore:
+  - dependency-name: roboter
+    versions:
+    - 11.6.10
+    - 11.6.17
+    - 11.6.22
+    - 11.6.26
+    - 11.6.28
+    - 11.6.29
+    - 11.6.33
+    - 11.6.36
+    - 11.6.7
+    - 11.6.8
+  - dependency-name: semantic-release-configuration
+    versions:
+    - 2.0.0
+  commit-message:
+    prefix: fix
+    prefix-development: chore
