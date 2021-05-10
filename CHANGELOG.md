@@ -1,3 +1,10 @@
+## [6.2.8](https://github.com/thenativeweb/uuidv4/compare/6.2.7...6.2.8) (2021-05-10)
+
+
+### Bug Fixes
+
+* bump hosted-git-info from 2.8.8 to 2.8.9 ([#336](https://github.com/thenativeweb/uuidv4/issues/336)) ([98ca567](https://github.com/thenativeweb/uuidv4/commit/98ca567369eda02e9914b01d024d073eada10208))
+
 ## [6.2.7](https://github.com/thenativeweb/uuidv4/compare/6.2.6...6.2.7) (2021-03-25)
 
 
