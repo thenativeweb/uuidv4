@@ -1,3 +1,10 @@
+## [6.2.9](https://github.com/thenativeweb/uuidv4/compare/6.2.8...6.2.9) (2021-06-08)
+
+
+### Bug Fixes
+
+* bump glob-parent from 5.1.1 to 5.1.2 ([#350](https://github.com/thenativeweb/uuidv4/issues/350)) ([c43aae4](https://github.com/thenativeweb/uuidv4/commit/c43aae41db9e02b9fecbb8f8977a473efae26483))
+
 ## [6.2.8](https://github.com/thenativeweb/uuidv4/compare/6.2.7...6.2.8) (2021-05-10)
 
 
