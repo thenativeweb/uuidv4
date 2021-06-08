@@ -1,3 +1,10 @@
+## [6.2.10](https://github.com/thenativeweb/uuidv4/compare/6.2.9...6.2.10) (2021-06-08)
+
+
+### Bug Fixes
+
+* bump trim-newlines from 3.0.0 to 3.0.1 ([#349](https://github.com/thenativeweb/uuidv4/issues/349)) ([3dc4a7f](https://github.com/thenativeweb/uuidv4/commit/3dc4a7f15eda76ec1986d109b8a15ecf3f620aff))
+
 ## [6.2.9](https://github.com/thenativeweb/uuidv4/compare/6.2.8...6.2.9) (2021-06-08)
 
 
