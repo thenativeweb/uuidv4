@@ -1,3 +1,10 @@
+## [6.2.12](https://github.com/thenativeweb/uuidv4/compare/6.2.11...6.2.12) (2021-08-16)
+
+
+### Bug Fixes
+
+* bump path-parse from 1.0.6 to 1.0.7 ([#364](https://github.com/thenativeweb/uuidv4/issues/364)) ([78014ec](https://github.com/thenativeweb/uuidv4/commit/78014ec86e829a74e597d73185ef68a3fa53c2bb))
+
 ## [6.2.11](https://github.com/thenativeweb/uuidv4/compare/6.2.10...6.2.11) (2021-07-06)
 
 
