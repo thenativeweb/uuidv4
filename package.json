@@ -24,6 +24,7 @@
       "email": "hannes.leutloff@thenativeweb.io"
     }
   ],
+  "private": false,
   "main": "build/lib/uuidv4.js",
   "types": "build/lib/uuidv4.d.ts",
   "dependencies": {
@@ -32,9 +33,10 @@
   },
   "devDependencies": {
     "assertthat": "6.3.13",
-    "roboter": "12.1.1",
+    "roboter": "12.1.2",
     "semantic-release-configuration": "2.0.5"
   },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/thenativeweb/uuidv4.git"
