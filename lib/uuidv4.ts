@@ -7,10 +7,8 @@ const regex = {
 };
 
 const jsonSchema = {
-  /* eslint-disable @typescript-eslint/no-base-to-string */
   v4: { type: 'string', pattern: regex.v4.toString().slice(1, -2) },
   v5: { type: 'string', pattern: regex.v5.toString().slice(1, -2) }
-  /* eslint-enable @typescript-eslint/no-base-to-string */
 };
 
 const uuidv4 = deprecate(
