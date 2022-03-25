@@ -1,3 +1,10 @@
+## [6.2.13](https://github.com/thenativeweb/uuidv4/compare/6.2.12...6.2.13) (2022-03-25)
+
+
+### Bug Fixes
+
+* bump minimist from 1.2.5 to 1.2.6 ([#387](https://github.com/thenativeweb/uuidv4/issues/387)) ([f3460a3](https://github.com/thenativeweb/uuidv4/commit/f3460a33224c7389bb4bf8d946e6c27cddc7a5f9))
+
 ## [6.2.12](https://github.com/thenativeweb/uuidv4/compare/6.2.11...6.2.12) (2021-08-16)
 
 
