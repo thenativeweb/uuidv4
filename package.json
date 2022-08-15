@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "assertthat": "6.5.2",
-    "roboter": "13.2.0",
+    "roboter": "13.2.1",
     "semantic-release-configuration": "2.0.7"
   },
   "scripts": {},
